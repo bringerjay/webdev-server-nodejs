@@ -1,0 +1,494 @@
+{
+	"info": {
+		"_postman_id": "7de14420-33ec-4fd4-9d71-54ca8e5e6c37",
+		"name": "hw10",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "TEST Create Student 123",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n        \"_id\": 123,\n        \"firstName\": \"Alice\",\n        \"lastName\": \"Wonderland\",\n        \"username\": \"alice\",\n        \"password\": \"alice\",\n        \"gradYear\": 2020,\n        \"scholarship\": 15000\n    }"
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/students",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"students"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TEST Create Student 234",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n        \"_id\": 234,\n        \"firstName\": \"Bob\",\n        \"lastName\": \"Hope\",\n        \"username\": \"bob\",\n        \"password\": \"bob\",\n        \"gradYear\": 2021,\n        \"scholarship\": 12000\n    }"
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/students",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"students"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TEST Create questions 321",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "        {\r\n            \"_id\": 321,\r\n            \"question\": \"JSON stands for JavaScript Object Notation\",\r\n            \"points\": 10,\r\n            \"questionType\": \"TRUE_FALSE\",\r\n            \"trueFalse\": {\r\n                \"isTrue\": true\r\n            }\r\n        }\r\n"
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/questions",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"questions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TEST Create questions 432",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n            \"_id\": 432,\r\n            \"question\": \"DAO stands for Dynamic Access Object.\",\r\n            \"points\": 10,\r\n            \"questionType\": \"TRUE_FALSE\",\r\n            \"trueFalse\": {\r\n                \"isTrue\": false\r\n            }\r\n        }\r\n"
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/questions",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"questions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "\bTest Create questions 543",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n            \"_id\": 543,\r\n            \"question\": \"What does JPA stand for?\",\r\n            \"points\": 10,\r\n            \"questionType\": \"MULTIPLE_CHOICE\",\r\n            \"multipleChoice\": {\r\n                \"choices\": [\r\n                    \"Java Persistence API\",\r\n                    \"Java Persisted Application\",\r\n                    \"JavaScript Persistence API\",\r\n                    \"JSON Persistent Associations\"\r\n                ],\r\n                \"correct\": 1\r\n            }\r\n        }\r\n\r\n        \r\n"
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/questions",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"questions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Test Create questions 654",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "        {\r\n            \"_id\": 654,\r\n            \"question\": \"What does ORM stand for?\",\r\n            \"points\": 10,\r\n            \"questionType\": \"MULTIPLE_CHOICE\",\r\n            \"multipleChoice\": {\r\n                \"choices\": [\r\n                    \"Object Relational Model\",\r\n                    \"Object Relative Markup\",\r\n                    \"Object Reflexive Model\",\r\n                    \"Object Relational Mapping\"\r\n                ],\r\n                \"correct\": 4\r\n            }\r\n        }\r\n"
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/questions",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"questions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create answers 123",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n            \"_id\": 123,\r\n            \"trueFalseAnswer\": true,\r\n            \"student\": 123,\r\n            \"question\": 321\r\n        }\r\n"
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/answers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"answers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create answers 234",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n            \"_id\": 234,\r\n            \"trueFalseAnswer\": false,\r\n            \"student\": 123,\r\n            \"question\": 432\r\n        }\r\n"
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/answers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"answers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create answers 345",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "        {\r\n            \"_id\": 345,\r\n            \"multipleChoiceAnswer\": 1,\r\n            \"student\": 123,\r\n            \"question\": 543\r\n        }\r\n"
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/answers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"answers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create answers 456",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n            \"_id\": 456,\r\n            \"multipleChoiceAnswer\": 2,\r\n            \"student\": 123,\r\n            \"question\": 654\r\n        }\r\n"
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/answers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"answers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create answers 567",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n            \"_id\": 567,\r\n            \"trueFalseAnswer\": false,\r\n            \"student\": 234,\r\n            \"question\": 321\r\n        }\r\n"
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/answers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"answers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create answers 678",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n            \"_id\": 678,\r\n            \"trueFalseAnswer\": true,\r\n            \"student\": 234,\r\n            \"question\": 432\r\n        }\r\n"
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/answers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"answers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create answers 789",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n            \"_id\": 789,\r\n            \"multipleChoiceAnswer\": 3,\r\n            \"student\": 234,\r\n            \"question\": 543\r\n        }\r\n"
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/answers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"answers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create answers 890",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n            \"_id\": 890,\r\n            \"multipleChoiceAnswer\": 4,\r\n            \"student\": 234,\r\n            \"question\": 654\r\n        }\r\n"
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/answers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"answers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Truancate",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/all",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Populate",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"students\": [\r\n        {\r\n            \"_id\": 123,\r\n            \"firstName\": \"Alice\",\r\n            \"lastName\": \"Wonderland\",\r\n            \"username\": \"alice\",\r\n            \"password\": \"alice\",\r\n            \"gradYear\": 2020,\r\n            \"scholarship\": 15000\r\n        },\r\n        {\r\n            \"_id\": 234,\r\n            \"firstName\": \"Bob\",\r\n            \"lastName\": \"Hope\",\r\n            \"username\": \"bob\",\r\n            \"password\": \"bob\",\r\n            \"gradYear\": 2021,\r\n            \"scholarship\": 12000\r\n        }\r\n    ],\r\n    \"questions\": [\r\n        {\r\n            \"_id\": 321,\r\n            \"question\": \"JSON stands for JavaScript Object Notation\",\r\n            \"points\": 10,\r\n            \"questionType\": \"TRUE_FALSE\",\r\n            \"trueFalse\": {\r\n                \"isTrue\": true\r\n            }\r\n        },\r\n        {\r\n            \"_id\": 432,\r\n            \"question\": \"DAO stands for Dynamic Access Object.\",\r\n            \"points\": 10,\r\n            \"questionType\": \"TRUE_FALSE\",\r\n            \"trueFalse\": {\r\n                \"isTrue\": false\r\n            }\r\n        },\r\n        {\r\n            \"_id\": 543,\r\n            \"question\": \"What does JPA stand for?\",\r\n            \"points\": 10,\r\n            \"questionType\": \"MULTIPLE_CHOICE\",\r\n            \"multipleChoice\": {\r\n                \"choices\": [\r\n                    \"Java Persistence API\",\r\n                    \"Java Persisted Application\",\r\n                    \"JavaScript Persistence API\",\r\n                    \"JSON Persistent Associations\"\r\n                ],\r\n                \"correct\": 1\r\n            }\r\n        },\r\n        {\r\n            \"_id\": 654,\r\n            \"question\": \"What does ORM stand for?\",\r\n            \"points\": 10,\r\n            \"questionType\": \"MULTIPLE_CHOICE\",\r\n            \"multipleChoice\": {\r\n                \"choices\": [\r\n                    \"Object Relational Model\",\r\n                    \"Object Relative Markup\",\r\n                    \"Object Reflexive Model\",\r\n                    \"Object Relational Mapping\"\r\n                ],\r\n                \"correct\": 4\r\n            }\r\n        }\r\n    ],\r\n    \"answers\": [\r\n        {\r\n            \"_id\": 123,\r\n            \"trueFalseAnswer\": true,\r\n            \"student\": 123,\r\n            \"question\": 321\r\n        },\r\n        {\r\n            \"_id\": 234,\r\n            \"trueFalseAnswer\": false,\r\n            \"student\": 123,\r\n            \"question\": 432\r\n        },\r\n        {\r\n            \"_id\": 345,\r\n            \"multipleChoiceAnswer\": 1,\r\n            \"student\": 123,\r\n            \"question\": 543\r\n        },\r\n        {\r\n            \"_id\": 456,\r\n            \"multipleChoiceAnswer\": 2,\r\n            \"student\": 123,\r\n            \"question\": 654\r\n        },\r\n        {\r\n            \"_id\": 567,\r\n            \"trueFalseAnswer\": false,\r\n            \"student\": 234,\r\n            \"question\": 321\r\n        },\r\n        {\r\n            \"_id\": 678,\r\n            \"trueFalseAnswer\": true,\r\n            \"student\": 234,\r\n            \"question\": 432\r\n        },\r\n        {\r\n            \"_id\": 789,\r\n            \"multipleChoiceAnswer\": 3,\r\n            \"student\": 234,\r\n            \"question\": 543\r\n        },\r\n        {\r\n            \"_id\": 890,\r\n            \"multipleChoiceAnswer\": 4,\r\n            \"student\": 234,\r\n            \"question\": 654\r\n        }\r\n    ]\r\n}\r\n"
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/populate",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"populate"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
