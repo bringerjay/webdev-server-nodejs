@@ -1,42 +1,50 @@
 [
 	{
-		"_id": "321",
-		"question": "Is the following schema valid?",
+		"_id": 321,
+		"question": "JSON stands for JavaScript Object Notation",
 		"points": 10,
-		"type": "TRUE_FALSE",
-		"isTrue": false
+		"questionType": "TRUE_FALSE",
+		"trueFalse": {
+			"isTrue": true
+		}
 	},
 	{
-		"_id": "432",
+		"_id": 432,
 		"question": "DAO stands for Dynamic Access Object.",
 		"points": 10,
-		"type": "TRUE_FALSE",
-		"isTrue": false
+		"questionType": "TRUE_FALSE",
+		"trueFalse": {
+			"isTrue": false
+		}
 	},
 	{
-		"_id": "543",
+		"_id": 543,
 		"question": "What does JPA stand for?",
 		"points": 10,
-		"type": "MULTIPLE_CHOICE",
-		"choices": [
-			"Java Persistence API",
-			"Java Persisted Application",
-			"JavaScript Persistence API",
-			"JSON Persistent Associations"
-		],
-		"correct": 1
+		"questionType": "MULTIPLE_CHOICE",
+		"multipleChoice": {
+			"choices": [
+				"Java Persistence API",
+				"Java Persisted Application",
+				"JavaScript Persistence API",
+				"JSON Persistent Associations"
+			],
+			"correct": 1
+		}
 	},
 	{
-		"_id": "654",
+		"_id": 654,
 		"question": "What does ORM stand for?",
 		"points": 10,
-		"type": "MULTIPLE_CHOICE",
-		"choices": [
-			"Object Relational Model",
-			"Object Relative Markup",
-			"Object Reflexive Model",
-			"Object Relational Mapping"
-		],
-		"correct": 3
+		"questionType": "MULTIPLE_CHOICE",
+		"multipleChoice": {
+			"choices": [
+				"Object Relational Model",
+				"Object Relative Markup",
+				"Object Reflexive Model",
+				"Object Relational Mapping"
+			],
+			"correct": 4
+		}
 	}
 ]

@@ -1,12 +1,18 @@
 var express = require('express')
 var app = express()
-
+var db = require('./data/db')
 var bodyParser = require('body-parser')
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
-
-
+db()
+var studentService = require('./services/student.service.server.js');
+studentService(app)
+var questionService = require('./services/question.service.server')
+questionService(app)
+var answerService = require('./services/answer.service.server')
+answerService(app)
+var quizWidgetService = require('./services/quizWidget.service.server')
+quizWidgetService(app)
 var universityService = require('./services/university.service.server')
 universityService(app)
-
 app.listen(3000)
